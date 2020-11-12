@@ -1,0 +1,78 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixin';
+
+.benefits {
+    background-color: #fff;
+    padding: $desctop68px 12.5vw $desctop104px;
+
+    @media only screen and (max-width: 499px) {
+        margin-top: $mobile55px;
+    }
+
+    &__title {
+        font-family: $montserrat400;
+        font-size: $desctop36px;
+        line-height: $desctop40px;
+        color: $textDarkLight;
+        text-align: left;
+        margin-bottom: $desctop60px;
+
+        @media only screen and (max-width: 499px) {
+            font-size: $mobile20px;
+            line-height: $mobile32px;
+            margin-bottom: $mobile55px;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top,
+    &__bottom {
+        display: flex;
+    }
+
+    &__top {
+        div:nth-child(2) {
+            transform: translateX(23.5vw);
+        }
+    }
+
+    &__bottom {
+        div:nth-child(1) {
+            transform: translateX(22.5vw);
+        }
+
+        div:nth-child(2) {
+            transform: translateX(44vw);
+        }
+    }
+
+    &__line {
+        width: 100%;
+        margin: $desctop20px 0;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        &_title {
+            font-family: $montserrat700;
+            font-size: $desctop14px;
+            line-height: $desctop16px;
+            color: #14D999;
+            margin-bottom: $desctop8px;
+        }
+
+        &_subTitle {
+            font-family: $montserrat400;
+            font-size: $desctop13px;
+            line-height: $desctop17px;
+            color: #000000;
+            max-width: 19vw;
+        }
+    }
+}
