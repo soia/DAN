@@ -8,11 +8,21 @@
     padding: $desctop104px 12.5vw;
     background: linear-gradient(66.54deg, #3B99FF 26.88%, #047DFF 106.47%);
 
+    @media only screen and (max-width: 499px) {
+        flex-direction: column;
+        padding: $mobile60px $mobile16px;
+    }
+
     &__title {
         font-family: $montserrat400;
         font-size: $desctop45px;
         line-height: $desctop60px;
         color: #fff;
+
+        @media only screen and (max-width: 499px) {
+            font-size: $mobile34px;
+            line-height: $mobile50px;
+        }
     }
 
     &__button {
@@ -34,10 +44,15 @@
         margin-left: 2.2vw;
 
         @media only screen and (max-width: 499px) {
-            font-size: 4vw;
+            width: 54vw;
+            height: 13.4vw;
+            font-family: $montserrat700;
+            font-size: $mobile12px;
             line-height: $mobile12px;
             padding: $mobile12px $mobile30px;
-            border-radius: 2px;
+            border-radius: $mobile2px;
+            text-transform: uppercase;
+            margin-left: $mobile20px;
         }
 
         &:hover {
@@ -50,6 +65,12 @@
 
 .countDown {
     display: flex;
+
+    @media only screen and (max-width: 499px) {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: $mobile60px;
+    }
 
     &__item {
         display: flex;
@@ -68,6 +89,12 @@
             color: $greenLight;
             width: 5vw;
             text-align: center;
+
+            @media only screen and (max-width: 499px) {
+                font-size: $mobile44px;
+                line-height: $mobile44px;
+                width: 15vw;
+            }
         }
 
         &_label {
@@ -76,6 +103,11 @@
             line-height: $desctop45px;
             text-transform: uppercase;
             color: rgba(255, 255, 255, 0.8);
+
+            @media only screen and (max-width: 499px) {
+                font-size: $mobile12px;
+                line-height: $mobile44px;
+            }
         }
     }
 }
