@@ -34,10 +34,10 @@ class Starting extends Component {
                 clearInterval(this.interval);
 
                 this.setState({
-                    days: '',
-                    hours: '',
-                    minutes: '',
-                    seconds: '',
+                    days: '0',
+                    hours: '0',
+                    minutes: '0',
+                    seconds: '0',
                 });
             }
         }, 1000);
