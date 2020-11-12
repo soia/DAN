@@ -1,38 +1,41 @@
-import React, { useState, useEffect } from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from '../layouts/header';
 import Footer from '../layouts/footer';
-import {
-    HomePage,
-    PageNotFound,
-    LoadingPage,
-} from '../pages';
+import { HomePage, PageNotFound, LoadingPage } from '../pages';
 import '../assets/styles/reset.scss';
 import './app.scss';
 import '../assets/styles/fonts.scss';
 
-const App = () => {
-    const [loading, setLoading] = useState(true);
-    useEffect(() => {
-        setTimeout(() => {
-            setLoading(false);
-        }, 500);
-    }, []);
+class App extends Component {
+    state = {
+        loading: true,
+    };
 
-    if (loading) {
-        return <LoadingPage />;
+    componentDidMount() {
+        setTimeout(() => {
+            this.setState({
+                loading: false,
+            });
+        }, 2000);
     }
 
-    return (
-        <Router>
-            <Header />
-            <Switch>
-                <Route path="/" component={HomePage} exact />
-                <Route component={PageNotFound} />
-            </Switch>
-            <Footer />
-        </Router>
-    );
-};
+    render() {
+        const { loading } = this.state;
+        document.body.style.overflowY = `${loading ? 'hidden' : 'visible'}`;
+
+        return (
+            <Router>
+                <LoadingPage loading={loading} />
+                <Header />
+                <Switch>
+                    <Route path="/" component={HomePage} exact />
+                    <Route component={PageNotFound} />
+                </Switch>
+                <Footer />
+            </Router>
+        );
+    }
+}
 
 export default App;

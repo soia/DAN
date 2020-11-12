@@ -12,8 +12,8 @@ const HomePage = () => (
         <HowItWorks />
         <WhatsThis />
         <TokenLeadGeneration />
-        <Team />
         <RoadMap />
+        <Team />
     </Fragment>
 );
 

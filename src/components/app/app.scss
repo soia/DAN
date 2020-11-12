@@ -8,8 +8,6 @@ html {
     width: 100%;
     min-height: 100vh;
     height: 100%;
-    overflow-y: overlay;
-    overflow-x: hidden;
 }
 
 body {
@@ -40,7 +38,7 @@ input::-webkit-inner-spin-button {
 // custom scrollbar
 
 ::-webkit-scrollbar {
-    width: 0.7vw;
+    width: 0.2w;
 }
 
 ::-webkit-scrollbar-track {
