@@ -1,16 +1,16 @@
 import React, { Fragment } from 'react';
 import FirstScreen from './first-screen';
 import HowItWorks from './how-it-works';
-import WhatsThis from './whats-this';
-import TokenLeadGeneration from './token-lead-generation';
+import Starting from './starting';
+import Implementation from './implementation';
 import Team from './team';
 import RoadMap from './road-map';
 
 const HomePage = () => (
     <Fragment>
         <FirstScreen />
-        <WhatsThis />
-        <TokenLeadGeneration />
+        <Starting />
+        <Implementation />
         <HowItWorks />
         <RoadMap />
         <Team />

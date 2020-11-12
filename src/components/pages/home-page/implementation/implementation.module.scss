@@ -1,0 +1,60 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixin';
+
+.implementation {
+    background-color: #fff;
+    padding: $desctop68px 12.5vw $desctop104px;
+
+    @media only screen and (max-width: 499px) {
+        margin-top: $mobile55px;
+    }
+
+    &__title {
+        font-family: $montserrat400;
+        font-size: $desctop36px;
+        line-height: $desctop40px;
+        color: $textDarkLight;
+        text-align: left;
+        margin-bottom: $desctop60px;
+
+        @media only screen and (max-width: 499px) {
+            font-size: $mobile20px;
+            line-height: $mobile32px;
+            margin-bottom: $mobile55px;
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+
+        &_icon {
+            width: $desctop66px;
+            height: $desctop66px;
+            margin-right: $desctop22px;
+        }
+
+        &_title {
+            font-family: $montserrat700;
+            font-size: $desctop16px;
+            line-height: $desctop18px;
+            color: #000000;
+            margin-bottom: $desctop8px;
+        }
+
+        &_subTitle {
+            font-family: $montserrat400;
+            font-size: $desctop13px;
+            line-height: $desctop17px;
+            color: #000000;
+        }
+
+        &_rightSide {
+            max-width: 15vw;
+        }
+    }
+}
