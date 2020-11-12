@@ -1,0 +1,119 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixin';
+
+.team {
+    margin-top: 9vw;
+
+    @media only screen and (max-width: 499px) {
+        margin-top: $mobile55px;
+    }
+
+    &__title {
+        font-family: $montserrat500;
+        font-size: $desctop34px;
+        line-height: $desctop55px;
+        color: #000;
+        text-align: center;
+        margin-bottom: $desctop68px;
+
+        @media only screen and (max-width: 499px) {
+            font-size: $mobile20px;
+            line-height: $mobile32px;
+            margin-bottom: $mobile55px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 $desctop178px;
+
+        @media only screen and (max-width: 499px) {
+            margin: 0 $mobile12px;
+        }
+    }
+
+    &__imgWrapper {
+        border: $desctop1px solid #DA2756;
+        border-radius: 50%;
+        width: 15.7vw;
+        height: 15.42vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media only screen and (max-width: 499px) {
+            width: 30.2vw;
+            height: 30.2vw;
+        }
+    }
+
+    &__item {
+        width: 33.33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto $desctop80px;
+
+        @media only screen and (max-width: 499px) {
+            width: 50%;
+            margin: 0 auto $mobile55px;
+        }
+
+        &:nth-child(4) {
+            margin-left: 11vw;
+
+            @media only screen and (max-width: 499px) {
+                margin-left: 0;
+            }
+        }
+
+        &:nth-child(5) {
+            margin-right: 10vw;
+
+            @media only screen and (max-width: 499px) {
+                margin: 0 auto;
+            }
+        }
+
+        &_photo {
+            border-radius: 50%;
+            object-fit: cover;
+            width: 13.2vw;
+            height: 12.92vw;
+
+            @media only screen and (max-width: 499px) {
+                width: 25.1vw;
+                height: 25.1vw;
+            }
+        }
+
+        &_name {
+            font-family: $montserrat500;
+            font-size: $desctop30px;
+            line-height: $desctop40px;
+            text-align: center;
+            color: #000;
+
+            @media only screen and (max-width: 499px) {
+                font-size: $mobile16px;
+                line-height: $mobile20px;
+                margin-top: $mobile20px;
+                margin-bottom: 1vw;
+            }
+        }
+
+        &_position {
+            font-family: $montserrat400;
+            font-size: $desctop21px;
+            line-height: $desctop40px;
+            text-align: center;
+            color: #000;
+
+            @media only screen and (max-width: 499px) {
+                font-size: 4vw;
+                line-height: $mobile20px;
+            }
+        }
+    }
+}

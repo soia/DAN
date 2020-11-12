@@ -1,0 +1,18 @@
+<svg width="301" height="682" viewBox="0 0 301 682" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 10.5C0 4.97713 4.47715 0.5 10 0.5H291C296.523 0.5 301 4.97715 301 10.5V671.5C301 677.023 296.523 681.5 291 681.5H10C4.47716 681.5 0 677.023 0 671.5L0 10.5Z" fill="#DA2756"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="301" height="682">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 10.5C0 4.97713 4.47715 0.5 10 0.5H291C296.523 0.5 301 4.97715 301 10.5V671.5C301 677.023 296.523 681.5 291 681.5H10C4.47716 681.5 0 677.023 0 671.5L0 10.5Z" fill="white"/>
+</mask>
+<g mask="url(#mask0)">
+<ellipse opacity="0.0633836" cx="101.709" cy="659.21" rx="65.7093" ry="65.7101" fill="white"/>
+<ellipse opacity="0.0633836" cx="162.593" cy="654.093" rx="40.5926" ry="40.5931" fill="white"/>
+<ellipse opacity="0.0633836" cx="23.0981" cy="671.599" rx="58.0981" ry="58.0988" fill="white"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="301" height="681" fill="white" transform="translate(0 0.5)"/>
+</clipPath>
+</defs>
+</svg>

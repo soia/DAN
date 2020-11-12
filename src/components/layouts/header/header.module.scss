@@ -1,0 +1,90 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixin';
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(188, 188, 188, 0.1);
+    padding: 1.25vw 12.5vw;
+    border-bottom: $desctop1px solid rgba(0, 0, 0, 0.08);
+
+    @media only screen and (max-width: 499px) {
+        margin-left: $mobile10px;
+        padding: $mobile10px $mobile10px $mobile10px 0;
+    }
+
+    &__logo img {
+        width: 6.042vw;
+        height: 3.056vw;
+
+        @media only screen and (max-width: 499px) {
+            width: 25vw;
+            height: 14vw;
+        }
+    }
+
+    &__nav {
+        display: flex;
+
+        li {
+
+            &:not(:last-child) {
+                margin-right: $desctop20px;
+            }
+
+            &:hover {
+                a {
+                    color: $greenLight;
+                }
+            }
+
+            a {
+                font-family: $montserrat400;
+                font-size: $desctop10px;
+                line-height: $desctop12px;
+                padding: $desctop10px;
+                color: $textDarkLight;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__socialIconsWrapper {
+        display: flex;
+        align-items: center;
+        height: fit-content;
+        position: relative;
+        z-index: 1;
+
+        &_item svg {
+            margin-right: $desctop10px;
+            width: $desctop20px;
+            height: $desctop20px;
+            display: flex;
+
+            &:hover {
+
+                path {
+                    opacity: 1;
+
+                    &:first-child {
+                        fill: $greenLight;
+                    }
+
+                    &:last-child {
+                        fill: #fff;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 499px) {
+                width: 4vw;
+                height: 4vw;
+                margin-right: 6vw;
+            }
+        }
+    }
+}

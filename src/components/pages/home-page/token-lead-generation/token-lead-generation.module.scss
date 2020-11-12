@@ -1,0 +1,191 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixin';
+
+.tokenLeadGeneration {
+    position: relative;
+    margin: 0 $desctop160px;
+
+    @media only screen and (max-width: 499px) {
+        margin: 0 $mobile12px;
+        background-image: url("./images/mobileBackground.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-border-radius: $mobile10px;
+        -moz-border-radius: $mobile10px;
+        border-radius: $mobile10px;
+        padding-bottom: $mobile20px;
+    }
+
+    &__title {
+        font-family: $montserrat500;
+        font-size: $desctop34px;
+        line-height: $desctop45px;
+        color: #fff;
+        padding: $desctop40px $desctop68px;
+
+        @media only screen and (max-width: 499px) {
+            font-size: $mobile20px;
+            line-height: $mobile28px;
+            padding: $mobile20px $mobile25px;
+        }
+    }
+
+    &__subTitleWrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $desctop90px;
+
+        @media only screen and (max-width: 499px) {
+            flex-wrap: wrap;
+            padding: 0 $mobile25px;
+        }
+    }
+
+    &__subTitle {
+        font-family: $montserrat400;
+        font-size: $desctop16px;
+        line-height: $desctop32px;
+        color: #fff;
+
+        @media only screen and (max-width: 499px) {
+            font-size: 4vw;
+            line-height: 6vw;
+        }
+
+        &:first-child {
+            padding-left: $desctop68px;
+            padding-right: 3.5vw;
+
+            @media only screen and (max-width: 499px) {
+                padding: 0;
+                padding-bottom: $mobile20px;
+            }
+        }
+
+        &:last-child {
+            padding-right: $desctop68px;
+            padding-left: 3.5vw;
+
+            @media only screen and (max-width: 499px) {
+                padding: 0;
+            }
+        }
+    }
+
+    &__background {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        height: 44vw;
+
+        @media only screen and (max-width: 499px) {
+            display: none;
+        }
+    }
+}
+
+.tokenDistribution {
+    font-family: $montserrat500;
+    font-size: $desctop25px;
+    line-height: $desctop30px;
+    color: #fff;
+    padding-left: $desctop50px;
+    margin-bottom: $desctop30px;
+
+    @media only screen and (max-width: 499px) {
+        font-size: $mobile20px;
+        line-height: $mobile28px;
+        padding: $mobile20px $mobile25px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 $desctop68px $desctop60px;
+
+        @media only screen and (max-width: 499px) {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+    }
+
+    &__item {
+        display: flex;
+
+        @media only screen and (max-width: 499px) {
+            width: 50%;
+            margin-bottom: $mobile42px;
+        }
+
+        &_img {
+            margin-right: $desctop22px;
+            height: $desctop17px;
+            width: $desctop17px;
+            margin-top: $desctop5px;
+
+            @media only screen and (max-width: 499px) {
+                height: $mobile10px;
+                width: $mobile10px;
+                margin-right: $mobile10px;
+                margin-top: 1vw;
+            }
+        }
+
+        &_title {
+            font-family: $montserrat500;
+            font-size: $desctop30px;
+            line-height: $desctop36px;
+            color: #fff;
+
+            @media only screen and (max-width: 499px) {
+                font-size: $mobile16px;
+                line-height: $mobile20px;
+                margin-bottom: 1vw;
+            }
+        }
+
+        &_titleSub {
+            font-family: $montserrat400;
+            font-size: 1vw;
+            line-height: 1.8vw;
+            color: #fff;
+            min-height: $desctop25px;
+
+            @media only screen and (max-width: 499px) {
+                font-size: 3vw;
+                line-height: 4.8vw;
+                margin-bottom: 1vw;
+            }
+        }
+
+        &_subTitle {
+            font-family: $montserrat500;
+            font-size: $desctop20px;
+            line-height: $desctop25px;
+            color: #fff;
+
+            @media only screen and (max-width: 499px) {
+                font-size: 4vw;
+                line-height: $mobile16px;
+            }
+        }
+    }
+}
+
+.totalCapitalization {
+    font-family: $montserrat500;
+    font-size: $desctop20px;
+    line-height: $desctop25px;
+    color: #fff;
+    letter-spacing: $desctop1px;
+    margin-left: $desctop50px;
+
+    @media only screen and (max-width: 499px) {
+        font-size: 4vw;
+        line-height: $mobile16px;
+        margin-left: $mobile25px;
+        font-size: 3.5vw;
+        letter-spacing: 1px;
+    }
+}
