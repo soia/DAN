@@ -2,6 +2,9 @@
 @import '../../../assets/styles/mixin';
 
 .starting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: $desctop104px 12.5vw;
     background: linear-gradient(66.54deg, #3B99FF 26.88%, #047DFF 106.47%);
 
@@ -41,6 +44,38 @@
             border: $desctop1px solid $greenLight;
             color: $greenLight;
             background: transparent;
+        }
+    }
+}
+
+.countDown {
+    display: flex;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &:not(:last-child) {
+            margin-right: $desctop80px;
+        }
+
+        &_time {
+            font-family: $montserrat500;
+            font-size: $desctop60px;
+            line-height: $desctop55px;
+            color: $greenLight;
+            width: 5vw;
+            text-align: center;
+        }
+
+        &_label {
+            font-family: $montserrat400;
+            font-size: $desctop13px;
+            line-height: $desctop45px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.8);
         }
     }
 }

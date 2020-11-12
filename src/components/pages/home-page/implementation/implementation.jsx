@@ -34,7 +34,7 @@ const Implementation = () => {
                     const { title, img, subTitle } = item;
 
                     return (
-                        <div className={style.implementation__item}>
+                        <div key={title} className={style.implementation__item}>
                             <img
                                 src={img}
                                 alt="img"

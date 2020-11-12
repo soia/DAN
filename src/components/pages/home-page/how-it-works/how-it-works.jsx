@@ -53,7 +53,7 @@ const HowItWorks = () => {
                         const { title, content, subTitle } = item;
 
                         return (
-                            <div className={style.destribution__item}>
+                            <div key={title} className={style.destribution__item}>
                                 <p className={style.destribution__item_title}>{title}</p>
                                 <p className={style.destribution__item_content}>{content}</p>
                                 {subTitle ? (
