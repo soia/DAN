@@ -9,9 +9,9 @@ import RoadMap from './road-map';
 const HomePage = () => (
     <Fragment>
         <FirstScreen />
-        <HowItWorks />
         <WhatsThis />
         <TokenLeadGeneration />
+        <HowItWorks />
         <RoadMap />
         <Team />
     </Fragment>

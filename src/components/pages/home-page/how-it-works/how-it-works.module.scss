@@ -1,40 +1,39 @@
 @import '../../../assets/styles/variables';
 @import '../../../assets/styles/mixin';
 
-.howItWorks {
-    position: relative;
-    margin-bottom: 22vw;
+.container {
+    padding: 9vw 12.5vw $desctop80px;
+    background-color: #f2f2f2;
+}
 
-    @media only screen and (max-width: 499px) {
-        background-image: url("./images/mobileBackground.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-bottom: 11vw;
-        margin-bottom: 11vw;
-    }
+.howItWorks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
 
     &__title {
-        font-family: $montserrat500;
-        font-size: $desctop34px;
-        line-height: $desctop55px;
-        color: #000;
-        text-align: center;
-        padding: $desctop68px 0 $desctop40px 0;
+        font-family: $montserrat400;
+        font-size: $desctop36px;
+        line-height: $desctop40px;
+        color: $textDarkLight;
+        text-align: left;
+        margin-bottom: $desctop32px;
+        max-width: 20vw;
 
         @media only screen and (max-width: 499px) {
             font-size: $mobile20px;
             line-height: $mobile32px;
-            padding-top: $mobile20px;
-            padding-bottom: 5vw;
+            margin-bottom: $mobile55px;
         }
     }
 
     &__subTitle {
-        font-family: $montserrat500;
-        font-size: $desctop22px;
-        line-height: $desctop32px;
-        color: #C8073A;
-        text-align: center;
+        font-family: $montserrat400;
+        font-size: $desctop14px;
+        line-height: $desctop25px;
+        color: #505761;
+        max-width: 32vw;
 
         @media only screen and (max-width: 499px) {
             font-size: 3.7vw;
@@ -44,129 +43,79 @@
         }
     }
 
-    &__basicPrinciplesWrapper {
-        margin: $desctop90px $desctop160px;
+    &__background {
+        width: 32vw;
+        height: 28.6vw;
+    }
+}
+
+
+.destribution {
+    &__title {
+        font-family: $montserrat400;
+        font-size: $desctop36px;
+        line-height: $desctop40px;
+        color: $textDarkLight;
+        text-align: left;
+        margin-bottom: $desctop45px;
+        max-width: 20vw;
+
+        @media only screen and (max-width: 499px) {
+            font-size: $mobile20px;
+            line-height: $mobile32px;
+            margin-bottom: $mobile55px;
+        }
+    }
+
+    &__container {
         display: flex;
         justify-content: space-between;
-
-        @media only screen and (max-width: 499px) {
-            flex-direction: column;
-            align-items: center;
-        }
     }
 
-    &__basicPrinciples {
-        width: 19.6vw;
+    &__item {
+        width: 17.45vw;
+        height: 7vw;
+        padding: $desctop12px $desctop20px $desctop6px $desctop20px;
+        background: linear-gradient(0deg, rgba(20, 217, 153, 0.1), rgba(20, 217, 153, 0.1));
+        border: $desctop2px solid #14D999;
+        border-radius: $desctop2px;
 
-        @media only screen and (max-width: 499px) {
-            width: 90%;
-            margin-bottom: $mobile42px;
-        }
-
-        &_rectangle {
-            background: #DA2756;
-            box-shadow: 0px $desctop8px $desctop34px rgba(9, 10, 12, 0.0661604);
-            border-radius: $desctop4px;
-            width: $desctop25px;
-            height: $desctop25px;
-            margin: 0 auto;
-
-            @media only screen and (max-width: 499px) {
-                width: $mobile20px;
-                height: $mobile20px;
-            }
+        &_title,
+        &_content,
+        &_subTitle {
+            font-family: $montserrat400;
+            text-align: center;
         }
 
         &_title {
-            font-family: $montserrat500;
-            font-size: $desctop20px;
-            line-height: $desctop24px;
-            text-align: center;
-            color: #2F281E;
-            margin: $desctop30px 0 $desctop10px;
-            height: $desctop68px;
-
-            @media only screen and (max-width: 499px) {
-                font-size: $mobile16px;
-                line-height: $mobile20px;
-                height: fit-content;
-                margin: $mobile24px 0 $mobile24px;
-            }
-        }
-
-        &_subTitle {
-            font-family: $montserrat400;
-            font-size: $desctop12px;
-            line-height: $desctop20px;
-            text-align: center;
-            color: #5C5040;
-
-            @media only screen and (max-width: 499px) {
-                font-size: 4vw;
-                line-height: $mobile16px;
-            }
-        }
-    }
-
-    &__principleOperation {
-        margin: 0 $desctop160px;
-
-        @media only screen and (max-width: 499px) {
-            margin: 0 $mobile12px;
-        }
-
-        &_title {
-            font-family: $montserrat500;
-            text-align: center;
-            font-size: $desctop22px;
-            line-height: $desctop32px;
-            color: #C8073A;
-            margin-bottom: $desctop32px;
-
-            @media only screen and (max-width: 499px) {
-                font-size: 3.7vw;
-                line-height: $mobile20px;
-                margin-bottom: $mobile30px;
-            }
-        }
-
-        &_subTitle {
-            font-family: $montserrat400;
-            font-size: $desctop16px;
+            font-size: $desctop17px;
             line-height: $desctop30px;
-            text-align: center;
             color: #000;
+        }
 
-            @media only screen and (max-width: 499px) {
-                font-size: 4vw;
-                line-height: 6vw;
-            }
+        &_content {
+            font-size: $desctop22px;
+            line-height: $desctop36px;
+            color: #03B279;
+        }
+
+        &_subTitle {
+            font-size: $desctop12px;
+            line-height: $desctop12px;
+            color: #000;
         }
     }
 
-    &__background {
-        position: absolute;
-        top: 0;
-        z-index: -1;
-        width: 100vw;
-        height: 71.7vw;
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: $desctop40px;
 
-        @media only screen and (max-width: 499px) {
-           display: none;
-        }
-    }
-
-    &__mobileBackground {
-        display: none;
-
-        @media only screen and (max-width: 499px) {
-            display: block;
-            position: absolute;
-            top: 0;
-            right: 0;
-            left: 0;
-            z-index: -1;
-            width: 100%;
+        p {
+            font-family: $montserrat400;
+            font-size: $desctop20px;
+            line-height: $desctop40px;
+            color: #000;
         }
     }
 }

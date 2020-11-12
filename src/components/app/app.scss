@@ -35,15 +35,17 @@ input::-webkit-inner-spin-button {
 // custom scrollbar
 
 ::-webkit-scrollbar {
-    width: 0.2w;
+    width: 0.2vw;
+    display: none;
 }
 
 ::-webkit-scrollbar-track {
-    background: #fff;
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #555;
+    border-radius: 2vw;
 }
 
 ::-webkit-scrollbar-thumb:hover {
