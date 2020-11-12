@@ -57,7 +57,7 @@ class Starting extends Component {
                 <h3 className={style.starting__title}>
                     Starting <br /> IEO
                     <a
-                        href="https://coinsbit.io/"
+                        href="https://сoinsbit.io/ieo-list/DAN_56"
                         className={style.starting__button}
                         target="_blank"
                         rel="noopener noreferrer"
