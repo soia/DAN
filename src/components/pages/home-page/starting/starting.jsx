@@ -52,6 +52,25 @@ class Starting extends Component {
             days, hours, minutes, seconds,
         } = this.state;
 
+        const data = [
+            {
+                time: days,
+                label: 'days',
+            },
+            {
+                time: hours,
+                label: 'hours',
+            },
+            {
+                time: minutes,
+                label: 'minutes',
+            },
+            {
+                time: seconds,
+                label: 'seconds',
+            },
+        ];
+
         return (
             <div className={style.starting}>
                 <h3 className={style.starting__title}>
@@ -66,22 +85,16 @@ class Starting extends Component {
                     </a>
                 </h3>
                 <div className={style.countDown}>
-                    <div className={style.countDown__item}>
-                        <p className={style.countDown__item_time}>{days}</p>
-                        <p className={style.countDown__item_label}>days</p>
-                    </div>
-                    <div className={style.countDown__item}>
-                        <p className={style.countDown__item_time}>{hours}</p>
-                        <p className={style.countDown__item_label}>hours</p>
-                    </div>
-                    <div className={style.countDown__item}>
-                        <p className={style.countDown__item_time}>{minutes}</p>
-                        <p className={style.countDown__item_label}>minutes</p>
-                    </div>
-                    <div className={style.countDown__item}>
-                        <p className={style.countDown__item_time}>{seconds}</p>
-                        <p className={style.countDown__item_label}>seconds</p>
-                    </div>
+                    {data.map(item => {
+                        const { time, label } = item;
+
+                        return (
+                            <div className={style.countDown__item}>
+                                <p className={style.countDown__item_time}>{time}</p>
+                                <p className={style.countDown__item_label}>{label}</p>
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
         );
