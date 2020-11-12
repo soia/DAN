@@ -22,7 +22,7 @@ class App extends Component {
 
     render() {
         const { loading } = this.state;
-        document.body.style.overflowY = `${loading ? 'hidden' : 'visible'}`;
+        document.documentElement.style.overflowY = `${loading ? 'hidden' : 'visible'}`;
 
         return (
             <Router>

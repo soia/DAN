@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import DAN_WP from '../../assets/DAN_WP.pdf';
 import logo from '../../assets/images/white-logo.svg';
 import TwitterIcon from '../../assets/images/twitter-icon';
 import InstagramIcon from '../../assets/images/instagram-icon';
@@ -27,7 +28,9 @@ const Footer = () => (
                 <AnchorLink href="#team">Team</AnchorLink>
             </li>
             <li>
-                <AnchorLink href="#whitepaper">Whitepaper</AnchorLink>
+                <a href={DAN_WP} target="_blank" rel="noopener noreferrer">
+                    Whitepaper
+                </a>
             </li>
         </ul>
         <div className={style.footer__socialIconsWrapper}>

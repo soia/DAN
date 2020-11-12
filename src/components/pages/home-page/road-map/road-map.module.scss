@@ -2,40 +2,33 @@
 @import '../../../assets/styles/mixin';
 
 .roadMap {
+    background-color: #fff;
+    padding: $desctop68px 12.5vw $desctop104px;
     position: relative;
-    margin-top: $desctop25px;
 
     @media only screen and (max-width: 499px) {
         margin-top: $mobile60px;
     }
 
     &__title {
-        font-family: $montserrat500;
-        font-size: $desctop34px;
-        line-height: $desctop55px;
-        color: #000;
-        text-align: center;
-        padding-top: $desctop68px;
-        padding-bottom: $desctop104px;
+        font-family: $montserrat400;
+        font-size: $desctop36px;
+        line-height: $desctop40px;
+        color: $textDarkLight;
+        text-align: left;
+        margin-bottom: $desctop60px;
 
         @media only screen and (max-width: 499px) {
             font-size: $mobile20px;
             line-height: $mobile32px;
-            padding-top: $mobile42px;
-            padding-bottom: $mobile55px;
-            position: absolute;
-            top: 7vw;
-            left: 50%;
-            transform: translateX(-50%);
+            margin-bottom: $mobile55px;
         }
     }
 
     &__roadMapImage {
         margin: 0 auto;
         display: flex;
-        margin-bottom: 8vw;
-        width: 75vw;
-        height: 56.6vw;
+        width: 100%;
 
         @media only screen and (max-width: 499px) {
             display: none;

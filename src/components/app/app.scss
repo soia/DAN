@@ -8,18 +8,15 @@ html {
     width: 100%;
     min-height: 100vh;
     height: 100%;
-}
-
-body {
-    background: #F2F2F2;
+    overflow-y: overlay;
+    overflow-x: hidden;
 }
 
 #root {
     display: flex;
     flex-direction: column;
-    font-family: $montserrat500;
     min-height: 100vh;
-    position: relative;
+    overflow-x: hidden;
 }
 
 *,

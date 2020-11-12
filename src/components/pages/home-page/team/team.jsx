@@ -1,75 +1,62 @@
 import React, { Fragment } from 'react';
-import ReactWOW from 'react-wow';
-import McCormick from './images/Charles McCormick.svg';
-import Summers from './images/David Summers.svg';
-import Nelson from './images/Elizabeth Nelson.svg';
-import Fleming from './images/John Fleming.svg';
-import Sutton from './images/Robert Sutton.svg';
+import chase from './images/chase.svg';
+import norton from './images/norton.svg';
+import cook from './images/cook.svg';
+import francis from './images/francis.svg';
+import green from './images/green.svg';
 import style from './team.module.scss';
 
 const Team = () => (
     <Fragment>
-        <div className={style.team}>
-            <ReactWOW disabled={!(window.innerWidth > 767)} animation="fadeInUp" delay="0.01s">
-                <h3 className={style.team__title}>Team</h3>
-                <div className={style.team__wrapper}>
-                    <div className={style.team__item}>
-                        <div className={style.team__imgWrapper}>
-                            <img
-                                className={style.team__item_photo}
-                                src={Fleming}
-                                alt="Fleming"
-                            />
-                        </div>
-                        <p className={style.team__item_name}>John Fleming</p>
-                        <p className={style.team__item_position}>Project founder</p>
-                    </div>
-                    <div className={style.team__item}>
-                        <div className={style.team__imgWrapper}>
-                            <img
-                                className={style.team__item_photo}
-                                src={Summers}
-                                alt="Summers"
-                            />
-                        </div>
-                        <p className={style.team__item_name}>David Summers</p>
-                        <p className={style.team__item_position}>Senior programmer</p>
-                    </div>
-                    <div className={style.team__item}>
-                        <div className={style.team__imgWrapper}>
-                            <img
-                                className={style.team__item_photo}
-                                src={Nelson}
-                                alt="Nelson"
-                            />
-                        </div>
-                        <p className={style.team__item_name}>Elizabeth Nelson</p>
-                        <p className={style.team__item_position}>Advertising manager</p>
-                    </div>
-                    <div className={style.team__item}>
-                        <div className={style.team__imgWrapper}>
-                            <img
-                                className={style.team__item_photo}
-                                src={Sutton}
-                                alt="Sutton"
-                            />
-                        </div>
-                        <p className={style.team__item_name}>Robert Sutton</p>
-                        <p className={style.team__item_position}>Public Relations</p>
-                    </div>
-                    <div className={style.team__item}>
-                        <div className={style.team__imgWrapper}>
-                            <img
-                                className={style.team__item_photo}
-                                src={McCormick}
-                                alt="McCormick"
-                            />
-                        </div>
-                        <p className={style.team__item_name}>Charles McCormick</p>
-                        <p className={style.team__item_position}>Programmer</p>
-                    </div>
+        <div className={style.team} id="team">
+            <h3 className={style.team__title}>Team</h3>
+            <div className={style.team__wrapper}>
+                <div className={style.team__item}>
+                    <img
+                        className={style.team__item_photo}
+                        src={chase}
+                        alt="chase"
+                    />
+                    <p className={style.team__item_position}>Founder</p>
+                    <p className={style.team__item_name}>Joseph Chase</p>
                 </div>
-            </ReactWOW>
+                <div className={style.team__item}>
+                    <img
+                        className={style.team__item_photo}
+                        src={norton}
+                        alt="norton"
+                    />
+                    <p className={style.team__item_position}>Marketing Specialist</p>
+                    <p className={style.team__item_name}>John Norton</p>
+                </div>
+                <div className={style.team__item}>
+                    <img
+                        className={style.team__item_photo}
+                        src={cook}
+                        alt="cook"
+                    />
+                    <p className={style.team__item_position}>Investor Relations</p>
+                    <p className={style.team__item_name}>Robert Cook</p>
+                </div>
+                <div className={style.team__item}>
+                    <img
+                        className={style.team__item_photo}
+                        src={francis}
+                        alt="francis"
+                    />
+                    <p className={style.team__item_position}>Web designer and developer</p>
+                    <p className={style.team__item_name}>Charles Francis</p>
+                </div>
+                <div className={style.team__item}>
+                    <img
+                        className={style.team__item_photo}
+                        src={green}
+                        alt="green"
+                    />
+                    <p className={style.team__item_position}>Program specialist</p>
+                    <p className={style.team__item_name}>Richard Green</p>
+                </div>
+            </div>
         </div>
     </Fragment>
 );
