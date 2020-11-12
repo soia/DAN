@@ -1,7 +1,6 @@
 import React from 'react';
 import DAN_WP from '../../../assets/DAN_WP.pdf';
 import background from './images/firstScreenBg.svg';
-import mobileBackground from './images/mobile-background.svg';
 import style from './first-screen.module.scss';
 
 const FirstScreen = () => (
@@ -15,6 +14,11 @@ const FirstScreen = () => (
                 Internet, earn money by sharing your connection, and create applications
                 that remove the limitations of your geoposition.
         </h3>
+        <img
+            className={style.firstScreen__background}
+            src={background}
+            alt="background"
+        />
         <a
             href={DAN_WP}
             className={style.firstScreen__button}
@@ -23,16 +27,6 @@ const FirstScreen = () => (
         >
             View Whitepaper
         </a>
-        <img
-            className={style.firstScreen__background}
-            src={background}
-            alt="background"
-        />
-        <img
-            className={style.firstScreen__mobileBackground}
-            src={mobileBackground}
-            alt="mobileBackground"
-        />
     </div>
 );
 

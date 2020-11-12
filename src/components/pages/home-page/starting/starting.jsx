@@ -89,7 +89,7 @@ class Starting extends Component {
                         const { time, label } = item;
 
                         return (
-                            <div className={style.countDown__item}>
+                            <div key={label} className={style.countDown__item}>
                                 <p className={style.countDown__item_time}>{time}</p>
                                 <p className={style.countDown__item_label}>{label}</p>
                             </div>

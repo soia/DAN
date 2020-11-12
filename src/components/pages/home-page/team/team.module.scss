@@ -6,7 +6,7 @@
     padding: $desctop68px 12.5vw $desctop104px;
 
     @media only screen and (max-width: 499px) {
-        margin-top: $mobile55px;
+        padding: $mobile42px $mobile16px;
     }
 
     &__title {
@@ -18,8 +18,9 @@
         margin-bottom: $desctop60px;
 
         @media only screen and (max-width: 499px) {
-            font-size: $mobile20px;
-            line-height: $mobile32px;
+            text-align: center;
+            font-size: $mobile25px;
+            line-height: $mobile34px;
             margin-bottom: $mobile55px;
         }
     }
@@ -29,7 +30,7 @@
         justify-content: space-between;
 
         @media only screen and (max-width: 499px) {
-            margin: 0 $mobile12px;
+            flex-wrap: wrap;
         }
     }
 
@@ -39,8 +40,8 @@
         flex-direction: column;
 
         @media only screen and (max-width: 499px) {
-            width: 50%;
-            margin: 0 auto $mobile55px;
+            width: 40.1%;
+            margin: 0 0 $mobile20px;
         }
 
         &_photo {
@@ -50,8 +51,9 @@
             height: 11.25vw;
 
             @media only screen and (max-width: 499px) {
-                width: 25.1vw;
-                height: 25.1vw;
+                border-radius: $mobile7px;
+                width: 100%;
+                height: 36.56vw;
             }
         }
 
@@ -62,10 +64,8 @@
             color: #000;
 
             @media only screen and (max-width: 499px) {
-                font-size: $mobile16px;
+                font-size: $mobile17px;
                 line-height: $mobile20px;
-                margin-top: $mobile20px;
-                margin-bottom: 1vw;
             }
         }
 
@@ -78,8 +78,10 @@
             height: 6vw;
 
             @media only screen and (max-width: 499px) {
-                font-size: 4vw;
-                line-height: $mobile20px;
+                font-size: $mobile13px;
+                line-height: $mobile13px;
+                height: 14vw;
+                padding: 5vw 0;
             }
         }
     }

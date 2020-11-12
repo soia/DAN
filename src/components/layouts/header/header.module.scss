@@ -9,8 +9,7 @@
     padding: 1.25vw 12.5vw;
 
     @media only screen and (max-width: 499px) {
-        margin-left: $mobile10px;
-        padding: $mobile10px $mobile10px $mobile10px 0;
+        padding: $mobile16px;
     }
 
     &__logo img {
@@ -18,13 +17,17 @@
         height: 3.056vw;
 
         @media only screen and (max-width: 499px) {
-            width: 25vw;
-            height: 14vw;
+            width: 19.5vw;
+            height: 10vw;
         }
     }
 
     &__nav {
         display: flex;
+
+        @media only screen and (max-width: 499px) {
+            display: none;
+        }
 
         li {
 
@@ -80,9 +83,9 @@
             }
 
             @media only screen and (max-width: 499px) {
-                width: 4vw;
-                height: 4vw;
-                margin-right: 6vw;
+                width: 5.4vw;
+                height: 5.4vw;
+                margin-right: $mobile12px;
             }
         }
     }
