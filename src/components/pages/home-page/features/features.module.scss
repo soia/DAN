@@ -6,7 +6,7 @@
     padding: $desctop68px 12.5vw $desctop104px;
 
     @media only screen and (max-width: 499px) {
-        margin-top: $mobile55px;
+        padding: $mobile25px $mobile16px $mobile60px;
     }
 
     &__title {
@@ -18,21 +18,35 @@
         margin-bottom: $desctop75px;
 
         @media only screen and (max-width: 499px) {
-            font-size: $mobile20px;
-            line-height: $mobile32px;
-            margin-bottom: $mobile55px;
+            font-size: $mobile25px;
+            line-height: $mobile34px;
+            margin-bottom: $mobile60px;
         }
     }
 
     &__container {
         display: flex;
         justify-content: space-between;
+
+        @media only screen and (max-width: 499px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__item {
         display: flex;
         flex-direction: column;
         max-width: 21vw;
+
+        @media only screen and (max-width: 499px) {
+            max-width: 100%;
+
+            &:not(:last-child) {
+                margin-bottom: $mobile50px;
+            }
+        }
+
         &_title {
             font-family: $montserrat400;
             font-size: $desctop24px;
@@ -40,6 +54,15 @@
             color: #3B99FF;
             margin-bottom: $desctop25px;
             height: 2.5vw;
+
+            @media only screen and (max-width: 499px) {
+                font-size: $mobile24px;
+                line-height: $mobile26px;
+                height: initial;
+                max-width: 60%;
+                margin: 0 auto $mobile18px;
+                text-align: center;
+            }
         }
 
         &_subTitle {
@@ -47,6 +70,14 @@
             font-size: $desctop14px;
             line-height: $desctop25px;
             color: #000000;
+
+            @media only screen and (max-width: 499px) {
+                font-size: $mobile14px;
+                line-height: $mobile26px;
+                max-width: 85%;
+                margin: 0 auto;
+                text-align: center;
+            }
         }
     }
 }
