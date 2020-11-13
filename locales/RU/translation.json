@@ -1,0 +1,135 @@
+{
+    "header": {
+        "about": "О нас",
+        "contact": "Контакты",
+        "signIn": "Войти",
+        "registration": "Регистрация"
+    },
+    "auth": {
+        "typeEmail": "Введите адрес электронной почты",
+        "typePassword": "Введите пароль",
+        "typeName": "Введите ваше имя",
+        "forgotPassword": "Забыли пароль ?",
+        "countryOfResidence": "Страна проживания",
+        "alreadyHaveAccount": "Уже есть аккаунт? Войдите здесь",
+        "createAccount": "Создать учетную запись",
+        "iAm18years": "Я подтверждаю, что мне есть 18 лет и полностью принимаю",
+        "termsOfLicenseAgreement": "условия лицензионного соглашения",
+        "iHaveReadAndFullyUnderstand": "Я прочитал(-а) и полностью понимаю",
+        "privacyPolicyCheckbox": "политику конфиденциальности",
+        "passwordRecovery": "Восстановление пароля"
+    },
+    "general": {
+        "selectFromList": "Выберите из списка",
+        "send": "Отправить",
+        "privacyPolicy": "Политика конфиденциальности",
+        "termOfUse": "Условия обслуживания и использования",
+        "yourCurrentBalance": "Ваш текущий баланс",
+        "deposit": "Депозит",
+        "withdrawal": "Вывод",
+        "datePlaceholder": "дд/мм/гггг",
+        "settings": "Настройки",
+        "yourEmailAddress": "Ваш E-mail адрес",
+        "сhange": "Изменить",
+        "сhangePassword": "Изменить пароль",
+        "enterPassword": "Введите пароль",
+        "confirmPassword": "Повторите пароль",
+        "save": "Сохранить"
+    },
+    "firstScreen": {
+        "title": "Game token",
+        "subtitle": "Лучшее решение казино токенов от CNGame Casino и биржи-партнера Coinsbit, одной из ведущих мировых криптовалютных бирж!  Гарантия выплаты вознаграждения, отсутствие посредников и банков и все преимущества криптовалюты объединены в игровом токене будущего - CNG!",
+        "beginToPlay": "Начать игру",
+        "scrollDown": "Scroll down"
+    },
+    "allGames": {
+        "title": "Все игры",
+        "play": "Играть"
+    },
+    "newGames": {
+        "title": "Новые игры"
+    },
+    "latestNews": {
+        "title": "Последние новости"
+    },
+    "advantages": {
+        "title": "Преимущества",
+        "content1": "Гарантия выплаты вознаграждения. В случае победы игрок обязательно получит выигрыш, все выплаты проводятся через блокчейн и каждую транзакцию можно отследить.",
+        "content2": "Отсутствие посредников и банков. Прямое взаимодействие игрока и казино при переводе криптовалюты.",
+        "content3": "Казино работают в глобальной сети, как и блокчейн-платформа. Отсутствуют границы, характерные для фиатных денег."
+    },
+    "principleOfWork": {
+        "title": "Принцип работы",
+        "principleOfWork": "Принцип работы",
+        "content1": "CNGame Casino будет работать исключительно на токене CNG, игроки смогут играть используя токен CNG. ",
+        "content2": "Все токены CNG будут реализованы по средствам AirDrop и реферальной программы на крипто-бирже Coinsbit.",
+        "content3": "Пользователи получившие эти токены смогут играть с их помощью на CNGame Casino или продать их после окончания реализации токенов CNG на криптовалютной бирже Coinsbit.",
+        "begin": "Начать",
+        "quick": "Быстрые",
+        "payouts": "выплаты",
+        "completely": "Полностью",
+        "safe": "безопасно"
+    },
+    "tokenImplementation": {
+        "title": "Реализация токена CNG",
+        "content1": "Подготовка к запуску токена",
+        "content2": "Реализация токена через реферальную программу и AirDrop на бирже Coinsbit.",
+        "content3": "Подготовка к открытию торгов и начисление токенов.",
+        "content4": "Запуск торгов по токену CNG на бирже Coinsbit.",
+        "content5": "Интеграция токена на CNGame Casino и подготовка к запуску платформы.",
+        "content6": "Запуск и открытие CNGame Casino."
+    },
+    "termsOfAirDrop": {
+        "title": "CNG Token",
+        "titleSecond": "Реферальная программа",
+        "subTitle": "Регистрация -",
+        "subTitleSecond": "$ 300",
+        "subTitleThird": "в CNG"
+    },
+    "referals": {
+        "title": "Принять участие в AirDrop и реферальной программе",
+        "referralProgram": "Реферальная программа",
+        "link": "Реферальная ссылка"
+    },
+    "footer": {
+        "company": "Компания",
+        "aboutUs": "О нас",
+        "faq": "FAQ",
+        "benefits": "Преимущества",
+        "gameToken": "CNG.Game token",
+        "principleOfOperation": "Принцип работы",
+        "tokenImplementation": "Реализация токена CNG",
+        "extension": "Extension",
+        "support": "Поддержка",
+        "privacyPolice": "Политика конфиденциальности",
+        "helpCenter": "Центр поддержки"
+    },
+    "smartContractAddress": {
+        "title": "Адрес Смарт Контракта",
+        "address": "Адрес"
+    },
+    "error": {
+        "title": "Что-то пошло не так.",
+        "field_can_not_be_empty": "Поле не может быть пустым.",
+        "wrong_email": "Неправильный адрес электронной почты.",
+        "only_letters_symbols_numbers": "Разрешены только латинские буквы, специальные символы и цифры.",
+        "password_at_least_6_chars": "Пароль должен быть не менее чем из 6 символов.",
+        "password_at_least_1_digit": "Пароль должен содержать не менее 1 цифры.",
+        "password_at_least_1_letters": "Пароль должен содержать не менее 1 буквы в нижнем регистре.",
+        "password_at_least_1_upperCase_letter": "Пароль должен содержать не менее 1 буквы в верхнем регистре.",
+        "only_latin_letters_and_numbers_allowed": "Разрешены только латинские буквы и цифры.",
+        "password_does_not_match": "Пароль не совпадает",
+        "need_to_agree": "Подтвердить условия использования"
+    },
+    "aside": {
+        "balance": "Баланс",
+        "history": "История",
+        "profileData": "Данные профиля",
+        "documents": "Документы"
+    },
+    "history": {
+        "operationsHistory": "История операций",
+        "betHistory": "История ставок"
+    },
+    "pageNotFound": "Страница не найдена"
+}
