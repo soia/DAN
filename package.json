@@ -1,7 +1,7 @@
 {
-    "homepage": "https://github.com/soia/DAN/",
+    "homepage": "http://soia.github.io/DAN/",
     "name": "dan",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "private": true,
     "dependencies": {
         "antd": "^3.19.2",
