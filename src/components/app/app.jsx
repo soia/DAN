@@ -29,7 +29,7 @@ class App extends Component {
                 <LoadingPage loading={loading} />
                 <Header />
                 <Switch>
-                    <Route path="/DAN/" component={HomePage} exact />
+                    <Route path="/" component={HomePage} exact />
                     <Route component={PageNotFound} />
                 </Switch>
                 <Footer />
