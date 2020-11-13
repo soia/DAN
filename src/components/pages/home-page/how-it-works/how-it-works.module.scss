@@ -4,6 +4,10 @@
 .container {
     padding: 5vw 12.5vw $desctop80px;
     background-color: #f2f2f2;
+
+    @media only screen and (max-width: 499px) {
+        padding: $mobile25px $mobile16px $mobile60px;
+    }
 }
 
 .howItWorks {
@@ -11,6 +15,11 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2vw;
+
+    @media only screen and (max-width: 499px) {
+        flex-direction: column;
+        margin-bottom: $mobile42px;
+    }
 
     &__title {
         font-family: $montserrat400;
@@ -22,9 +31,11 @@
         max-width: 20vw;
 
         @media only screen and (max-width: 499px) {
-            font-size: $mobile20px;
-            line-height: $mobile32px;
-            margin-bottom: $mobile55px;
+            font-size: $mobile25px;
+            line-height: $mobile34px;
+            margin-bottom: $mobile42px;
+            text-align: center;
+            max-width: initial;
         }
     }
 
@@ -36,16 +47,24 @@
         max-width: 32vw;
 
         @media only screen and (max-width: 499px) {
-            font-size: 3.7vw;
-            line-height: $mobile20px;
-            padding: 0 21vw;
-            margin-bottom: 12vw;
+            font-size: $mobile14px;
+            line-height: $mobile25px;
+            max-width: initial;
+            text-align: center;
+            width: 90%;
+            margin: 0 auto;
         }
     }
 
     &__background {
         width: 32vw;
         height: 28.6vw;
+
+        @media only screen and (max-width: 499px) {
+            width: 100%;
+            height: 73.6vw;
+            margin-top: $mobile30px;
+        }
     }
 }
 
@@ -61,24 +80,43 @@
         max-width: 20vw;
 
         @media only screen and (max-width: 499px) {
-            font-size: $mobile20px;
-            line-height: $mobile32px;
-            margin-bottom: $mobile55px;
+            font-size: $mobile25px;
+            line-height: $mobile34px;
+            margin-bottom: $mobile42px;
+            text-align: center;
+            max-width: initial;
         }
     }
 
     &__container {
         display: flex;
         justify-content: space-between;
+
+        @media only screen and (max-width: 499px) {
+            flex-direction: column;
+        }
     }
 
     &__item {
         width: 17.45vw;
         height: 7vw;
-        padding: $desctop12px $desctop20px $desctop6px $desctop20px;
+        padding: $desctop12px $mobile20px $mobile6px $mobile20px;
         background: linear-gradient(0deg, rgba(20, 217, 153, 0.1), rgba(20, 217, 153, 0.1));
         border: $desctop2px solid #14D999;
         border-radius: $desctop2px;
+
+        @media only screen and (max-width: 499px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 67vw;
+            height: 26vw;
+            padding: $mobile12px $desctop20px;
+            margin: 0 auto $mobile44px;
+            border: $mobile2px solid #14D999;
+            border-radius: $mobile2px;
+        }
 
         &_title,
         &_content,
@@ -91,18 +129,33 @@
             font-size: $desctop17px;
             line-height: $desctop30px;
             color: #000;
+
+            @media only screen and (max-width: 499px) {
+                font-size: $mobile17px;
+                line-height: $mobile34px;
+            }
         }
 
         &_content {
             font-size: $desctop22px;
             line-height: $desctop36px;
             color: #03B279;
+
+            @media only screen and (max-width: 499px) {
+                font-size: $mobile21px;
+                line-height: $mobile34px;
+            }
         }
 
         &_subTitle {
             font-size: $desctop12px;
             line-height: $desctop12px;
             color: #000;
+
+            @media only screen and (max-width: 499px) {
+                font-size: $mobile12px;
+                line-height: $mobile12px;
+            }
         }
     }
 
@@ -111,11 +164,26 @@
         justify-content: space-between;
         margin-top: $desctop40px;
 
+        @media only screen and (max-width: 499px) {
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+        }
+
         p {
             font-family: $montserrat400;
             font-size: $desctop20px;
             line-height: $desctop40px;
             color: #000;
+
+            @media only screen and (max-width: 499px) {
+                font-size: $mobile17px;
+                line-height: $mobile42px;
+
+                &:first-child {
+                    margin-bottom: $mobile10px;
+                }
+            }
         }
     }
 }
