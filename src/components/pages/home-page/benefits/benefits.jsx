@@ -19,7 +19,8 @@ const Benefits = () => (
                         on its basis.
                     </p>
                 </div>
-                <img src={mobileLine} alt="line" className={style.benefits__mobileLine} />
+                <div><img src={mobileLine} alt="line" className={style.benefits__mobileLine} /></div>
+
                 <div className={style.benefits__item}>
                     <p className={style.benefits__item_title}>
                         Internet <br /> security
@@ -30,7 +31,7 @@ const Benefits = () => (
                     </p>
                 </div>
             </div>
-            <img src={mobileLine} alt="line" className={style.benefits__mobileLine} />
+            <div><img src={mobileLine} alt="line" className={style.benefits__mobileLine} /></div>
             <img src={line} alt="line" className={style.benefits__line} />
             <div className={style.benefits__bottom}>
                 <div className={style.benefits__item}>
@@ -43,7 +44,7 @@ const Benefits = () => (
                         on its basis.
                     </p>
                 </div>
-                <img src={mobileLine} alt="line" className={style.benefits__mobileLine} />
+                <div><img src={mobileLine} alt="line" className={style.benefits__mobileLine} /></div>
                 <div className={style.benefits__item}>
                     <p className={style.benefits__item_title}>
                         Open source <br />

@@ -41,11 +41,11 @@
     }
 
     &__top {
-        div:nth-child(2) {
+        div:nth-child(3) {
             transform: translateX(23.5vw);
 
             @media only screen and (max-width: 499px) {
-                margin-bottom: $mobile34px;
+                transform: translateX(0);
             }
         }
     }
@@ -59,7 +59,7 @@
             }
         }
 
-        div:nth-child(2) {
+        div:nth-child(3) {
             transform: translateX(44vw);
 
             @media only screen and (max-width: 499px) {
