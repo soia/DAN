@@ -1,5 +1,6 @@
 import React from 'react';
 import line from './images/line.svg';
+import mobileLine from './images/mobile-line.svg';
 import style from './benefits.module.scss';
 
 const Benefits = () => (
@@ -18,6 +19,7 @@ const Benefits = () => (
                         on its basis.
                     </p>
                 </div>
+                <img src={mobileLine} alt="line" className={style.benefits__mobileLine} />
                 <div className={style.benefits__item}>
                     <p className={style.benefits__item_title}>
                         Internet <br /> security
@@ -28,6 +30,7 @@ const Benefits = () => (
                     </p>
                 </div>
             </div>
+            <img src={mobileLine} alt="line" className={style.benefits__mobileLine} />
             <img src={line} alt="line" className={style.benefits__line} />
             <div className={style.benefits__bottom}>
                 <div className={style.benefits__item}>
@@ -40,6 +43,7 @@ const Benefits = () => (
                         on its basis.
                     </p>
                 </div>
+                <img src={mobileLine} alt="line" className={style.benefits__mobileLine} />
                 <div className={style.benefits__item}>
                     <p className={style.benefits__item_title}>
                         Open source <br />

@@ -6,7 +6,7 @@
     padding: $desctop68px 12.5vw $desctop104px;
 
     @media only screen and (max-width: 499px) {
-        margin-top: $mobile55px;
+        padding: $mobile25px $mobile16px $mobile60px;
     }
 
     &__title {
@@ -18,9 +18,11 @@
         margin-bottom: $desctop60px;
 
         @media only screen and (max-width: 499px) {
-            font-size: $mobile20px;
-            line-height: $mobile32px;
-            margin-bottom: $mobile55px;
+            font-size: $mobile25px;
+            line-height: $mobile34px;
+            margin-bottom: $mobile42px;
+            text-align: center;
+            max-width: initial;
         }
     }
 
@@ -32,32 +34,67 @@
     &__top,
     &__bottom {
         display: flex;
+
+        @media only screen and (max-width: 499px) {
+           flex-direction: column;
+        }
     }
 
     &__top {
         div:nth-child(2) {
             transform: translateX(23.5vw);
+
+            @media only screen and (max-width: 499px) {
+                margin-bottom: $mobile34px;
+            }
         }
     }
 
     &__bottom {
         div:nth-child(1) {
             transform: translateX(22.5vw);
+
+            @media only screen and (max-width: 499px) {
+                transform: translateX(0);
+            }
         }
 
         div:nth-child(2) {
             transform: translateX(44vw);
+
+            @media only screen and (max-width: 499px) {
+                transform: translateX(0);
+            }
         }
     }
 
     &__line {
         width: 100%;
         margin: $desctop20px 0;
+
+        @media only screen and (max-width: 499px) {
+            display: none;
+        }
+    }
+
+    &__mobileLine {
+        display: none;
+
+        @media only screen and (max-width: 499px) {
+            display: block;
+            margin: $mobile34px auto;
+            width: $mobile17px;
+            height: 22vw;
+        }
     }
 
     &__item {
         display: flex;
         flex-direction: column;
+
+        @media only screen and (max-width: 499px) {
+            align-items: center;
+        }
 
         &_title {
             font-family: $montserrat700;
@@ -65,6 +102,13 @@
             line-height: $desctop16px;
             color: #14D999;
             margin-bottom: $desctop8px;
+
+            @media only screen and (max-width: 499px) {
+                font-size: $mobile13px;
+                line-height: $mobile16px;
+                margin-bottom: $mobile7px;
+                text-align: center;
+            }
         }
 
         &_subTitle {
@@ -73,6 +117,14 @@
             line-height: $desctop17px;
             color: #000000;
             max-width: 19vw;
+
+            @media only screen and (max-width: 499px) {
+                font-size: $mobile12px;
+                line-height: $mobile16px;
+                max-width: initial;
+                text-align: center;
+                width: 70%;
+            }
         }
     }
 }
