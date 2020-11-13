@@ -1,10 +1,10 @@
-## Lead Generation Manager - Front-end
+## DAN- Front-end
 
 
 ## Start developing in local environment
 Step 1: Clone this repo
 ```
-git clone https://github.com/soia/Lead-Generation-Manager
+git clone https://github.com/soia/DAN
 ```
 
 Step 2: Install (in project root)
@@ -23,7 +23,7 @@ npm start
 Step 1: Clone this repo
 
 ```
-git clone https://github.com/soia/Lead-Generation-Manager
+git clone https://github.com/soia/DAN
 ```
 
 Step 2: Install (in project root)
