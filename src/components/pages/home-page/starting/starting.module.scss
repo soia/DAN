@@ -15,14 +15,22 @@
 
     &__title {
         font-family: $montserrat400;
-        font-size: $desctop45px;
+        font-size: $desctop40px;
         line-height: $desctop60px;
         color: #fff;
+        margin-bottom: $desctop10px;
 
         @media only screen and (max-width: 499px) {
             font-size: $mobile34px;
             line-height: $mobile50px;
+            margin-bottom: $mobile10px;
         }
+    }
+
+    &__leftSide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__button {
@@ -41,7 +49,6 @@
         border: $desctop1px solid transparent;
         padding: $desctop20px $desctop45px;
         text-decoration: none;
-        margin-left: 2.2vw;
 
         @media only screen and (max-width: 499px) {
             width: 54vw;
@@ -52,7 +59,6 @@
             padding: $mobile12px $mobile30px;
             border-radius: $mobile2px;
             text-transform: uppercase;
-            margin-left: $mobile20px;
         }
 
         &:hover {
@@ -69,7 +75,7 @@
     @media only screen and (max-width: 499px) {
         width: 100%;
         justify-content: space-between;
-        margin-top: $mobile60px;
+        margin-top: 10vw;
     }
 
     &__item {

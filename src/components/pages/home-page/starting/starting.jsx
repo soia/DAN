@@ -73,8 +73,8 @@ class Starting extends Component {
 
         return (
             <div className={style.starting}>
-                <h3 className={style.starting__title}>
-                    Starting <br /> IEO
+                <div className={style.starting__leftSide}>
+                    <h3 className={style.starting__title}>Starting IEO</h3>
                     <a
                         href="https://coinsbit.io/ieo-list/DAN_56"
                         className={style.starting__button}
@@ -83,7 +83,7 @@ class Starting extends Component {
                     >
                         Go to Coinsbit
                     </a>
-                </h3>
+                </div>
                 <div className={style.countDown}>
                     {data.map(item => {
                         const { time, label } = item;
